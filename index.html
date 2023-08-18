@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Money | Master</title>
+</head>
+<body>
+    <header>
+        <h1 class="text-[#31A5AC] text-4xl font-bold text-center mt-7">Money Master💰 </h1>
+    </header>
+
+    <main>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-5  mt-10 m-auto">
+            <div>
+                <img src="./images/img1.png" alt="" class="w-[60%] h-[70vh] m-auto lg:mr-10">
+            </div>
+            <div class="ml-[5.5rem] bg-slate-200 p-5 lg:ml-[2rem] w-[60%]">
+                <h1 class="text-center text-3xl font-semibold">Income</h1>
+                <h1 class="text-xl mt-2">Income: <input type="text" name="" id="incomeFeild"></h1>
+                <h1 class="text-center text-3xl font-semibold">Expenses</h1>
+                <h1 class="text-xl mt-2">Food: <input type="text" name="" id="food-value"></h1>
+                <h1 class="text-xl mt-2">Rent : <input type="text" name="" id="rent-value"></h1>
+                <h1 class="text-xl mt-2">Clothes: <input type="text" name="" id="clothes-value"></h1>
+
+                <button class="btn btn-primary btn-sm  mt-2" onclick="calculateBtn()">Calculate</button>
+                <p class="text-xl mt-2">Expenses: <span id="expenses-value">0</p>
+                <p class="text-xl mt-2">Balance: <span id="balace-value">0</p>
+
+                <h1 class="text-xl mt-2">Save: <input type="text" name="" id="user-number" class="w-10"> % <button class="btn btn-primary btn-sm" onclick="saveBtn()">Save</button></h1>
+                <p class="text-xl mt-2">Saving Amount: <span id="saving-amount">0</p>
+                    <p class="text-xl mt-2">Remaining Amount: <span id="remaining-amount">0</p>
+
+            </div>
+
+        </div>
+    </main>
+
+
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
